@@ -19,3 +19,4 @@ E:\OneDrive\Daten\Entwicklung\Web\Textconverter\TextConv\TextConv\obj\Debug\Text
 E:\OneDrive\Daten\Entwicklung\Web\Textconverter\TextConv\TextConv\obj\Debug\TextConv.exe
 E:\OneDrive\Daten\Entwicklung\Web\Textconverter\TextConv\TextConv\obj\Debug\TextConv.xml
 E:\OneDrive\Daten\Entwicklung\Web\Textconverter\TextConv\TextConv\obj\Debug\TextConv.pdb
+E:\OneDrive\Daten\Entwicklung\Web\Textconverter\TextConv\TextConv\obj\Debug\TextConv.vbprojResolveAssemblyReference.cache
