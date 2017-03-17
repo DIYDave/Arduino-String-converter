@@ -35,6 +35,7 @@ Partial Class TextConverter
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ChkBox_Rem_Empty = New System.Windows.Forms.CheckBox()
         Me.chkBox_Rem_comments = New System.Windows.Forms.CheckBox()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtInput
@@ -43,16 +44,16 @@ Partial Class TextConverter
         Me.txtInput.Multiline = True
         Me.txtInput.Name = "txtInput"
         Me.txtInput.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtInput.Size = New System.Drawing.Size(423, 621)
+        Me.txtInput.Size = New System.Drawing.Size(436, 621)
         Me.txtInput.TabIndex = 0
         '
         'txtOutput
         '
-        Me.txtOutput.Location = New System.Drawing.Point(723, 45)
+        Me.txtOutput.Location = New System.Drawing.Point(709, 45)
         Me.txtOutput.Multiline = True
         Me.txtOutput.Name = "txtOutput"
         Me.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtOutput.Size = New System.Drawing.Size(423, 621)
+        Me.txtOutput.Size = New System.Drawing.Size(436, 621)
         Me.txtOutput.TabIndex = 1
         '
         'Button1
@@ -70,7 +71,7 @@ Partial Class TextConverter
         '
         Me.txtVariable.Location = New System.Drawing.Point(504, 160)
         Me.txtVariable.Name = "txtVariable"
-        Me.txtVariable.Size = New System.Drawing.Size(108, 20)
+        Me.txtVariable.Size = New System.Drawing.Size(75, 20)
         Me.txtVariable.TabIndex = 3
         Me.txtVariable.Text = "HTMLstring"
         Me.ToolTip1.SetToolTip(Me.txtVariable, "Name of the string variable in the output")
@@ -78,7 +79,7 @@ Partial Class TextConverter
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(618, 163)
+        Me.Label1.Location = New System.Drawing.Point(585, 163)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(71, 13)
         Me.Label1.TabIndex = 4
@@ -87,7 +88,7 @@ Partial Class TextConverter
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(372, 20)
+        Me.Label2.Location = New System.Drawing.Point(431, 18)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(293, 13)
         Me.Label2.TabIndex = 5
@@ -150,11 +151,21 @@ Partial Class TextConverter
         Me.ToolTip1.SetToolTip(Me.chkBox_Rem_comments, "Remove all //Comments")
         Me.chkBox_Rem_comments.UseVisualStyleBackColor = True
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(176, 13)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(67, 23)
+        Me.btnClear.TabIndex = 11
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'TextConverter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1158, 683)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.chkBox_Rem_comments)
         Me.Controls.Add(Me.ChkBox_Rem_Empty)
         Me.Controls.Add(Me.ChkBox_Add_Linefeed)
@@ -185,4 +196,5 @@ Partial Class TextConverter
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents ChkBox_Rem_Empty As CheckBox
     Friend WithEvents chkBox_Rem_comments As CheckBox
+    Friend WithEvents btnClear As Button
 End Class

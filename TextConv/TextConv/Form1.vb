@@ -22,7 +22,7 @@
             Dim String1 As String = """"
             Dim String2 As String = "\"""
             NewLine = NewLine.Replace(String1, String2)
-            If Z = 0 Then StartText = " =" Else StartText = " +=" 'First Line only "=" all others "+="
+            If Z = 0 Then StartText = " =" Else StartText = " += " 'First Line only "=" all others "+="
             If chkBox_Rem_comments.Checked Then
                 pos = NewLine.IndexOf("//")
                 If pos > -1 Then
@@ -31,7 +31,7 @@
             End If
             NewLine = LTrim(NewLine)
             If Not ChkBox_Rem_Empty.Checked Or (ChkBox_Rem_Empty.Checked And NewLine <> "") Then
-                Me.txtOutput.Text = Me.txtOutput.Text & Me.txtVariable.Text & StartText & """" & NewLine & EndText & vbCrLf
+                Me.txtOutput.Text = Me.txtOutput.Text & "  " & Me.txtVariable.Text & StartText & """" & NewLine & EndText & vbCrLf
             End If
 
             If ChkBox_copy.Checked Then CopyToClip()
@@ -59,5 +59,9 @@
             MsgBox("If you allow comments in the output, select the Option 'Add Linefeed (\r\n)'" & vbCrLf &
             "otherwise the result will not work ")
         End If
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        Me.txtInput.Text = ""
     End Sub
 End Class
