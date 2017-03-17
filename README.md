@@ -9,6 +9,6 @@ Take a look at the file "Tool Screenshot.pdf" for a better understanding
 
 The .exe File will only work if you have install the coresponding .Net framework.
 
-Source is for "visual studio 2015 community"
+Source is made with "visual studio 2015 community"
 
 ![alt tag](https://github.com/DIYDave/Arduino-String-converter/blob/master/Tool%20Screenshot.jpg)
